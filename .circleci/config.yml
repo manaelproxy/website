@@ -1,0 +1,55 @@
+version: 2.1
+
+executors:
+  default:
+    docker:
+      - image: circleci/node:8.12.0
+    environment:
+      NODE_ENV: development
+    working_directory: ~/project/
+
+commands:
+  yarn_install:
+    steps:
+      - restore_cache:
+          keys:
+            - v1-node-dependencies-{{ checksum "yarn.lock" }}
+            - v1-node-dependencies-
+
+      - run: yarn install --frozen-lockfile
+
+      - save_cache:
+          key: v1-node-dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules/
+
+jobs:
+  build:
+    executor:
+      name: default
+    steps:
+      - checkout
+      - yarn_install
+      - run: yarn build
+
+  deploy:
+    executor:
+      name: default
+    steps:
+      - checkout
+      - yarn_install
+      - run: NODE_ENV=production yarn build
+      - run: yarn deploy --user "bot <bot@manael.org>"
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
