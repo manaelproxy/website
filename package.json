@@ -1,7 +1,7 @@
 {
   "description": "Manael website",
   "devDependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.1.0",
     "vuepress": "^1.0.3"
   },
   "license": "MIT",
