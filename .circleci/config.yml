@@ -48,6 +48,7 @@ jobs:
       name: default
     steps:
       - checkout
+      - run: git submodule update --init --recursive
       - attach_workspace:
           at: .
       - run: PATH=~/project/bin:${PATH} HUGO_ENV=production yarn build --minify
