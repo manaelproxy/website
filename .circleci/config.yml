@@ -3,9 +3,10 @@ version: 2.1
 executors:
   default:
     docker:
-      - image: circleci/node:8.12.0
+      - image: circleci/node:10
     environment:
-      NODE_ENV: development
+      HUGO_ENV: development
+      HUGO_VERSION: '0.57.2'
     working_directory: ~/project/
 
 commands:
@@ -29,16 +30,26 @@ jobs:
       name: default
     steps:
       - checkout
+      - run: git submodule update --init --recursive
+      - run:
+          name: Install Hugo
+          command: |
+            mkdir -p bin
+            curl -sSL https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz | tar xzf - -C ./bin/
       - yarn_install
-      - run: yarn build
+      - run: PATH=~/project/bin:${PATH} yarn build
+      - persist_to_workspace:
+          paths:
+            - ./*
+          root: .
 
   deploy:
     executor:
       name: default
     steps:
-      - checkout
-      - yarn_install
-      - run: NODE_ENV=production yarn build
+      - attach_workspace:
+          at: .
+      - run: PATH=~/project/bin:${PATH} HUGO_ENV=production yarn build --minify
       - run: yarn deploy --user "bot <bot@manael.org>"
 
 workflows:
