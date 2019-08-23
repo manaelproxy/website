@@ -1,3 +1,5 @@
-/docs/.vuepress/dist/
 /node_modules/
+/public/
+/resources/
+
 /yarn-error.log

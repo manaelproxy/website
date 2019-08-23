@@ -1,15 +1,16 @@
 {
   "description": "Manael website",
   "devDependencies": {
+    "autoprefixer": "^9.6.1",
     "gh-pages": "^2.1.1",
-    "vuepress": "^1.0.3"
+    "postcss-cli": "^6.1.3"
   },
   "license": "MIT",
   "name": "@manael/website",
   "scripts": {
-    "build": "vuepress build docs",
-    "deploy": "gh-pages -d ./docs/.vuepress/dist/",
-    "dev": "vuepress dev docs"
+    "build": "hugo",
+    "deploy": "gh-pages -d ./",
+    "dev": "hugo server -D"
   },
   "version": "1.0.0"
 }
