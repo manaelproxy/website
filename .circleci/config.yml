@@ -41,6 +41,7 @@ jobs:
       - persist_to_workspace:
           paths:
             - bin
+            - node_modules
           root: .
 
   deploy:
