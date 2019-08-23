@@ -9,7 +9,7 @@
   "name": "@manael/website",
   "scripts": {
     "build": "hugo",
-    "deploy": "gh-pages -d ./",
+    "deploy": "gh-pages -d public",
     "dev": "hugo server -D"
   },
   "version": "1.0.0"
