@@ -40,16 +40,14 @@ jobs:
       - run: PATH=~/project/bin:${PATH} yarn build
       - persist_to_workspace:
           paths:
-            - ./*
+            - bin
           root: .
 
   deploy:
     executor:
       name: default
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - 'e1:1a:ca:7e:a4:e4:df:d8:87:da:63:e4:1d:b2:e4:f5'
+      - checkout
       - attach_workspace:
           at: .
       - run: PATH=~/project/bin:${PATH} HUGO_ENV=production yarn build --minify
