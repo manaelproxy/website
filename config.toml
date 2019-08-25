@@ -48,8 +48,8 @@ anchor = "smart"
 
 [[menu.main]]
     name = "GitHub"
-    weight = 40
-    url = "https://github.com/manaelproxy/manael/"
+    weight = 20
+    url = "https://github.com/manaelproxy/manael"
 
 [services]
 [services.googleAnalytics]
