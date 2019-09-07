@@ -7,7 +7,7 @@ linkTitle: Installation Guide
 
 The Manael recommends running on [Docker](https://www.docker.com/). A Docker image is published on [Docker Hub](https://hub.docker.com/).
 
-Get it with `docker pull manael/manael:lates` command before running the Manael with the Docker. Using the Docker eliminates a need to add unnecessary files to your environment.
+Get it with `docker pull manael/manael:latest` command before running the Manael with the Docker. Using the Docker eliminates a need to add unnecessary files to your environment.
 
 ## Using a built binary
 
