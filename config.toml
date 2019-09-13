@@ -70,8 +70,8 @@ title = "Manael"
 description = "Manael は画像処理のためのシンプルな HTTP プロキシです。"
 languageName ="日本語"
 contentDir = "content/ja"
-time_format_default = "2006/02/01"
-time_format_blog = "2006/02/01"
+time_format_default = "2006/01/02"
+time_format_blog = "2006/01/02"
 
 
 # Everything below this are Site Params
