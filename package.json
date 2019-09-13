@@ -11,7 +11,7 @@
   "license": "MIT",
   "name": "@manael/website",
   "scripts": {
-    "build": "hugo --minify",
+    "build": "hugo -e production --minify",
     "dev": "hugo server -D"
   },
   "version": "1.0.0"
