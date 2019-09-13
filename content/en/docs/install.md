@@ -1,6 +1,7 @@
 ---
-title: Installation Guide
+lastmod: 2019-08-25T15:25:50Z
 linkTitle: Installation Guide
+title: Installation Guide
 ---
 
 ## Using the Docker

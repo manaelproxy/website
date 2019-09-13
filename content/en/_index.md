@@ -1,6 +1,7 @@
 ---
-title: Manael
+lastmod: 2019-08-24T03:50:08Z
 linkTitle: Manael
+title: Manael
 ---
 
 {{< blocks/cover title="Welcome to Manael!" image_anchor="top" height="auto" color="dark" >}}
