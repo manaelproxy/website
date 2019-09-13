@@ -5,11 +5,13 @@
     "gh-pages": "^2.1.1",
     "postcss-cli": "^6.1.3"
   },
+  "engines": {
+    "node": "^10.13.0"
+  },
   "license": "MIT",
   "name": "@manael/website",
   "scripts": {
     "build": "hugo",
-    "deploy": "gh-pages -d public",
     "dev": "hugo server -D"
   },
   "version": "1.0.0"

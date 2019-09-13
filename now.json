@@ -1,0 +1,35 @@
+{
+  "alias": ["manael.org"],
+  "builds": [
+    {
+      "config": {
+        "distDir": "public"
+      },
+      "src": "build.sh",
+      "use": "@now/static-build"
+    }
+  ],
+  "github": {
+    "silent": true
+  },
+  "name": "manael.org",
+  "routes": [
+    {
+      "headers": {
+        "Cache-Control": "max-age=600, s-maxage=60"
+      },
+      "src": "/.*"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "dest": "/404.html",
+      "src": "/.*",
+      "status": 404
+    }
+  ],
+  "regions": ["hnd1"],
+  "scope": "manael",
+  "version": 2
+}
