@@ -27,7 +27,7 @@
     },
     {
       "headers": {
-        "Cache-Control": "max-age=600, s-maxage=60"
+        "Cache-Control": "immutable, max-age=315576000, public"
       },
       "src": "/.*"
     },
