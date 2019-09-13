@@ -1,6 +1,7 @@
 ---
-title: インストール手順
+lastmod: 2019-08-25T15:25:50Z
 linkTitle: インストール手順
+title: インストール手順
 ---
 
 ## Docker を使う

@@ -10,9 +10,9 @@ curl -L https://dl.google.com/go/go1.13.linux-amd64.tar.gz | tar xzf - -C local
 export PATH=$(go env GOPATH)/bin:${PATH}
 
 mkdir -p local/src
-curl -L https://github.com/gohugoio/hugo/archive/v0.58.1.tar.gz | tar xzf - -C local/src
+curl -L https://github.com/gohugoio/hugo/archive/v${HUGO_VERSION}.tar.gz | tar xzf - -C local/src
 
-cd local/src/hugo-0.58.1
+cd local/src/hugo-${HUGO_VERSION}
 go install --tags extended
 
 cd -

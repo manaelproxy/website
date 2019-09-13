@@ -1,5 +1,10 @@
 {
   "alias": ["manael.org"],
+  "build": {
+    "env": {
+      "HUGO_VERSION": "0.58.1"
+    }
+  },
   "builds": [
     {
       "config": {

@@ -1,10 +1,11 @@
 ---
-title: Manael へようこそ!
+lastmod: 2019-08-25T15:25:50Z
 linkTitle: ドキュメント
-weight: 20
 menu:
   main:
     weight: 20
+title: Manael へようこそ!
+weight: 20
 ---
 
 Manael は JPEG と PNG を WebP に変換する HTTP プロキシです。ストレージサーバーとキャッシュサーバーの間に配置すると最適なリソース変換が行われます。
