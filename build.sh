@@ -18,6 +18,7 @@ go install --tags extended
 cd -
 
 git clone --recursive https://github.com/google/docsy.git themes/docsy
+git checkout f427623e1a80d1106df7f2f372002ffff1858482
 
 yarn install --frozen-lockfile
 yarn build
