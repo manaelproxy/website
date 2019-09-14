@@ -128,11 +128,11 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 #	url = "https://example.org/mail"
 #	icon = "fa fa-envelope"
 #	desc = "Discussion and help from your fellow users"
-#[[params.links.user]]
-#	name ="Twitter"
-#	url = "https://example.org/twitter"
-#	icon = "fab fa-twitter"
-#	desc = "Follow us on Twitter to get the latest news!"
+[[params.links.user]]
+name ="Twitter"
+url = "https://twitter.com/manaelproxy"
+icon = "fab fa-twitter"
+desc = "Follow us on Twitter to get the latest news!"
 #[[params.links.user]]
 #	name = "Stack Overflow"
 #	url = "https://example.org/stack"

@@ -3,7 +3,7 @@ lastmod: 2019-08-25T15:25:50Z
 linkTitle: Documentation
 menu:
   main:
-    weight: 20
+    weight: 10
 title: Welcome to Manael!
 weight: 20
 ---
