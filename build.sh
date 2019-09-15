@@ -24,4 +24,4 @@ git checkout f427623e1a80d1106df7f2f372002ffff1858482
 cd -
 
 yarn install --frozen-lockfile
-yarn build
+yarn build --baseURL https://manael.org/
