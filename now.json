@@ -28,7 +28,7 @@
     {
       "dest": "/x/$1.html",
       "headers": {
-        "Cache-Control": "max-age=600, s-maxage=60",
+        "Cache-Control": "max-age=600, s-maxage=60"
       },
       "src": "/x/(.*)"
     },
