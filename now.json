@@ -21,13 +21,20 @@
   "routes": [
     {
       "headers": {
-        "Cache-Control": "max-age=600, s-maxage=60"
+        "Cache-Control": "immutable, max-age=315576000, public"
       },
       "src": "/(?:js|scss)/.+\\.min\\..+\\.(?:js|css)"
     },
     {
+      "dest": "/x/$1.html",
       "headers": {
-        "Cache-Control": "immutable, max-age=315576000, public"
+        "Cache-Control": "max-age=600, s-maxage=60",
+      },
+      "src": "/x/(.*)"
+    },
+    {
+      "headers": {
+        "Cache-Control": "max-age=600, s-maxage=60"
       },
       "src": "/.*"
     },
