@@ -1,8 +1,8 @@
+/*
+  Cache-Control: max-age=600, s-maxage=60
+
 /js/*.min.*.js
   Cache-Control: immutable, max-age=315576000, public
 
-/css/*.min.*.js
+/css/*.min.*.css
   Cache-Control: immutable, max-age=315576000, public
-
-/*
-  Cache-Control: max-age=600, s-maxage=60
