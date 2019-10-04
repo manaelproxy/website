@@ -1,7 +1,7 @@
-/js/*.min.js
+/js/*.min.*.js
   Cache-Control: immutable, max-age=315576000, public
 
-/css/*.min.js
+/css/*.min.*.js
   Cache-Control: immutable, max-age=315576000, public
 
 /*
