@@ -2,7 +2,7 @@
   "description": "Manael website",
   "devDependencies": {
     "autoprefixer": "^9.7.3",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^2.2.0",
     "postcss-cli": "^6.1.3"
   },
   "engines": {
