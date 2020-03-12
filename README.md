@@ -1,7 +1,1 @@
-# manael.org
-
-This repository contains a source files for manael.org.
-
-## License
-
-[MIT](LICENSE)
+This repository has been deprecated. Move to [manaelproxy/manael](https://github.com/manaelproxy/manael).
